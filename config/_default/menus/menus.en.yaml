@@ -3631,6 +3631,18 @@ api:
     url: /api/latest/metrics/
     identifier: metrics
     generated: true
+  - name: List Ingested and Indexed Volumes by Metric Name
+    url: '#list-ingested-and-indexed-volumes-by-metric-name'
+    identifier: list-ingested-and-indexed-volumes-by-metric-name
+    parent: metrics
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - ListIngestedIndexedVolumesByMetricName
+      unstable:
+        - v2
   - name: Create a Tag Configuration
     url: '#create-a-tag-configuration'
     identifier: create-a-tag-configuration
@@ -3677,6 +3689,18 @@ api:
         - v2
       operationids:
         - DeleteTagConfiguration
+      unstable:
+        - v2
+  - name: List Ingested Tags by Metric Name
+    url: '#list-ingested-tags-by-metric-name'
+    identifier: list-ingested-tags-by-metric-name
+    parent: metrics
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - ListIngestedTagsByMetricName
       unstable:
         - v2
   - name: List Tag Configurations

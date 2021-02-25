@@ -249,6 +249,10 @@
     "description": "Returns all configured count/gauge/rate/distribution metric names\n(with additional filters if specified).",
     "summary": "List Tag Configurations"
   },
+  "ListIngestedTagsByMetricName": {
+    "description": "View ingested tags from the given metric name.",
+    "summary": "List Ingested Tags by Metric Name"
+  },
   "DeleteTagConfiguration": {
     "description": "Deletes a metric's tag configuration. Can only be used with application\nkeys from users with the `Manage Tags for Metrics` permission.",
     "summary": "Delete a Tag Configuration"
@@ -268,6 +272,10 @@
     "summary": "Create a Tag Configuration",
     "request_description": "",
     "request_schema_description": "Request object that includes the metric that you would like to configure tags for."
+  },
+  "ListIngestedIndexedVolumesByMetricName": {
+    "description": "View Ingested and Indexed metric volume for the given metric name.",
+    "summary": "List Ingested and Indexed Volumes by Metric Name"
   },
   "ListPermissions": {
     "description": "Returns a list of all permissions, including name, description, and ID.",
